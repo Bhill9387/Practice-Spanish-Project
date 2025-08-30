@@ -1,0 +1,755 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.ssurfers-header {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ssurfers-contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ssurfers-header ul {
+  list-style: none;
+  display: flex;
+  padding-right: 10px;
+}
+
+.ssurfers-header ul li a i {
+  color: white;
+  margin-left: 20px;
+}
+
+/* Brand row */
+.SSURFERS div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SSURFERS div ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding-right: 100px;
+}
+
+.SSURFERS div ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.SSURFERS div {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+/* Hero */
+.ssurfers-hero-section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.ssurfers-hero-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+.hero-overlay h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-overlay button {
+  padding: 15px 45px;
+  color: white;
+  background-color: tomato;
+  border: none;
+}
+
+/* Surfboards */
+.Surfboards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 16px 56px;
+}
+
+.Surfboards h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.surfboards-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.surfboard-item {
+  text-align: left;
+}
+
+.surfboard-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.surfboard-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.surfboard-item p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* SEE ALL button */
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-all-btn {
+  display: block;
+  margin: 28px auto 0;
+  padding: 14px 44px;
+  background-color: #f05a28;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.see-all-btn:hover {
+  background-color: #d94d20;
+  transform: scale(1.05);
+}
+
+/* Learn surfing */
+.learn-surfing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+}
+
+.learn-surfing img {
+  flex: 4;
+  width: 900px;
+  height: 490px;
+  object-fit: cover;
+}
+
+.learn-surfing .learn-surfing-content {
+  flex: 1;
+  padding: 40px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.learn-surfing-content button {
+  padding: 15px 80px;
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+}
+
+.learn-surfing-content button:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.learn-surfing-content h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.learn-surfing-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  width: 50%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Utility container (unused here but fine to keep) */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* ===== BACKPACKS (scoped font) ===== */
+.backpack {
+  padding: 24px 0 8px;
+  font-family: 'Poppins', sans-serif; /* ✅ uses the font you linked in <head> */
+}
+
+.backpack h2 {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 500;             /* ✅ lighter like your instructor */
+  letter-spacing: 0.5px;
+  margin: 8px 0 24px;
+  text-transform: capitalize;   /* optional: 'Backpacks' */
+}
+
+.backpack-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.backpack-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.backpack-item h3 {
+  margin: 12px 0 6px;
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.backpack-item p {
+  margin: 0;
+  font-weight: 800;  /* bold price */
+  letter-spacing: .2px;
+}
+
+/* ===== Responsive (surfboards) ===== */
+@media (max-width: 860px) {
+  .surfboards-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .surfboards-container { grid-template-columns: 1fr; }
+  .surfboard-item img { height: 240px; }
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.ssurfers-header {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ssurfers-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ssurfers-header ul {
+    list-style: none;
+    display: flex;
+    padding-right: 10px;
+}
+
+.ssurfers-header ul li a i {
+    color: white;
+    margin-left: 20px;
+}
+
+.SSURFERS div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SSURFERS div ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding-right: 100px;
+}
+
+.SSURFERS div ul li a { 
+    color: #000;
+    text-decoration: none;
+}
+
+.SSURFERS div {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.ssurfers-hero-section {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ssurfers-hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 1rem;
+    max-width: 90%;
+}
+
+.hero-overlay h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-overlay button {
+    padding: 15px 45px;
+    color: white;
+    background-color: tomato;
+    border: none; 
+}
+
+.Surfboards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.Surfboards .Surfboardssection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Surfboards {
+  padding: 48px 16px 56px;
+}
+
+/* Title */
+.Surfboards h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Grid container */
+.surfboards-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Individual surfboard card */
+.surfboard-item {
+  text-align: left;
+}
+
+.surfboard-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.surfboard-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.surfboard-item p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700; /* bold price */
+}
+
+/* SEE ALL button (optional) */
+/* SEE ALL button styles */
+.see-all-container {
+ display: flex;   
+ justify-content: center;
+ align-items: center;                /* Centers the button */
+}
+          
+.see-all-btn {
+  display: block;              /* Makes it take up full width for easy centering */
+  margin: 28px auto 0;          /* Centers the button horizontally */
+  padding: 14px 44px;           /* Top/bottom + left/right padding */
+  background-color: #f05a28;    /* Bright orange color */
+  color: #fff;                  /* White text */
+  border: none;                 /* No border */      /* Makes it more round */
+  font-weight: 700;             /* Bold text */
+  letter-spacing: 0.5px;        /* Slight spacing for cleaner look */
+  cursor: pointer;              /* Pointer on hover */
+  font-size: 16px;               /* Text size */
+  text-align: center;            /* Centers text inside */
+  font-family: "Roboto", sans-serif; /* Matches your site font */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.see-all-btn:hover {
+  background-color: #d94d20; /* Slightly darker orange */
+  transform: scale(1.05);    /* Grows slightly on hover */
+}
+
+.learn-surfing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 30px;  
+  padding: 40px;
+}
+
+.learn-surfing img {
+  flex: 4;
+  width: 900px;
+  height: 490px;
+  object-fit: cover;
+  
+
+ 
+}
+
+.learn-surfing .learn-surfing-content {
+  flex: 1;
+  padding: 40px;
+  height: auto;
+  margin-left: 40px;
+}
+.learn-surfing-content button {
+  padding: 15px 80px;
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+  
+  }
+
+  .learn-surfing-content button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out; 
+    }
+
+.learn-surfing-content h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.learn-surfing-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  width: 50%;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 40px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+
+
+
+.backpack {
+  padding: 24px 0 8px;  
+}
+
+.backpack h2 {
+  font-family: 'Roboto', sans-serif;  /* match instructor */
+  font-weight: 400;                   /* light */
+  font-size: 40px;                    /* smaller like theirs */
+  letter-spacing: 0.2px;
+  margin: 8px 0 24px;
+  text-align: center;
+}
+
+/* 3) The grid of items */
+.backpack-container {  
+  max-width: 1200px;           
+  margin-inline: auto;         
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;                   
+}
+
+/* 4) Single product card */
+.backpack-item img {
+  overflow: hidden;
+  position:relative;
+  width: 100%;
+  height: 260px;               /* consistent row height like your screenshot */
+  object-fit: cover;           /* crop to fill without distortion */
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 0.3s ease-in-out;
+}
+
+.backpack-item img:hover {
+  transform: scale(1.15) rotate(2deg) translateX(-5px) translateY(-8px);
+  cursor: pointer;}
+
+.backpack-item h3 {
+  margin: 12px 0 6px;
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.backpack-item p {
+  margin: 0;
+  font-weight: 800;            /* bold price (95 USD, etc.) */
+  letter-spacing: .2px;
+}
+
+
+.customer-reviews {
+  background: #fbf1ec;                 /* soft peach */
+  padding: 72px 16px 88px;
+  text-align: center;
+}
+
+.customer-reviews h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: clamp(28px, 3.8vw, 44px);
+  line-height: 1.2;
+  margin: 0 0 14px;
+}
+
+.reviews-subtitle {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.reviews-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 36px;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 32px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.review-card .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.review-card p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.review-card .handle {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 700;
+  color: #f05a28;         /* your brand orange */
+  letter-spacing: .2px;
+}
+
+
+.newsletter {
+  background: #f05a28; 
+  color: white;
+  text-align: center;
+  padding: 60px 16px;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.newsletter h2 {
+  font-size: clamp(28px, 4vw, 34px);
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}
+.newsletter-form input[type="email"] {
+  padding: 14px 16px;
+  width: 400px;
+  max-width: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+.newsletter-form button {
+  padding: 14px 44px;
+  background-color:#f05a28;
+  color: white;
+  border:1px solid white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 860px) {
+  .reviews-container { grid-template-columns: 1fr; }
+}
+/* Responsive layout */
+@media (max-width: 860px) {
+  .surfboards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .surfboards-container {
+    grid-template-columns: 1fr;
+  }
+  .surfboard-item img {
+    height: 240px;
+  }
+}
