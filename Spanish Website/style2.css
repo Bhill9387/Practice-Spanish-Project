@@ -153,3 +153,145 @@ transition: ease-in-out 0.4s;
 .about-text .btn:hover {
   background-color: #333;
   }
+
+  /* === Testimonials Section === */
+.testimonials {
+  padding: 80px 20px;
+  background-color: white; /* or a light background of your choice */
+}
+
+.testimonials-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 30%; /* three in a row on desktop */
+  position: relative; /* for quote icon positioning */
+  box-sizing: border-box;
+}
+
+.testimonial-card h3 {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* or a bold brush font */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* yellow quote icon inside Sue's card */
+.quote-icon {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font-size: 4rem;
+  color: #f1c40f; /* yellow color */
+  font-weight: bold;
+}
+
+/* Section container */
+.teaching-methods {
+  padding: 80px 20px;
+  background-color: #ffffff; /* or your page background */
+}
+
+.methods-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap; /* mobile wrap */
+}
+
+/* Left side (torn paper strips) */
+.methods-left {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.method-item {
+  position: relative;
+}
+
+.method-paper {
+  position: relative;
+  padding: 30px 40px;
+  background: url('images/paper-texture.png') center/cover no-repeat; /* torn paper texture image */
+  border-radius: 6px; /* optional: slight rounding */
+  display: inline-block;
+}
+
+.method-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Smiley images */
+.method-smiley {
+  position: absolute;
+  width: 60px; /* adjust size */
+  height: 60px;
+  top: -20px;   /* tweak placement for each strip in media queries if needed */
+  right: -20px;
+  transform: rotate(-5deg);
+}
+
+/* Right side (heading + paragraph) */
+.methods-right {
+  flex: 1 1 50%;
+}
+
+.methods-right h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.methods-right p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .methods-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .methods-left, .methods-right {
+    flex: 1 1 100%;
+  }
+
+  .method-smiley {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    right: -15px;
+  }
+}
+
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 900px) {
+  .testimonial-card {
+    width: 100%;
+  }
+}
